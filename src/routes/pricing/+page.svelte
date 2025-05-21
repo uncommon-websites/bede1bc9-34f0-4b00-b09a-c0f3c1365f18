@@ -46,4 +46,13 @@
 	]}
 />
 
-<CallToAction />
+<CallToAction
+  title="Don’t let your GPUs sit idle"
+  subtitle="Cloud storage that keeps up with your data"
+  description="S3 shouldn’t slow you down. Regatta turns any S3-compatible storage into a blazing-fast, POSIX-compliant file system—so your workloads can access what they need, when they need it. No more waiting, no more wasted GPU time. Swap it in minutes, scale without limits, and get dedicated support from engineers who built AWS EFS and Netflix’s storage platform."
+  imageSrc="/generated/image-a-cheerful-software-engineer-sitting-at-.webp"
+  callsToAction={[
+    { href: "/get-started", label: "Get early access", variant: "primary" },
+    { href: "/contact", label: "Talk to sales", variant: "secondary" }
+  ]}
+/>

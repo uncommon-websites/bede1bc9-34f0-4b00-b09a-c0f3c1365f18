@@ -54,9 +54,8 @@
 />
 
 <Summary
-	generating
 	title="What we do"
-	text="Our technology delivers measurable results through secure, adaptable solutions that directly increase productivity and drive growth."
+	text="Regatta Storage makes S3 cloud storage work like a local file system, eliminating slow data transfers and keeping your GPUs busy. Get instant, POSIX-compatible access to huge datasets—without re-architecting your workflow. Simple, seamless performance for teams with real data needs."
 />
 
 <Testimonials
@@ -93,68 +92,81 @@
 />
 
 <Features
-	generating
-	title="Features"
-	subtitle="Some features"
+	title="Why teams choose Regatta"
+	subtitle={undefined}
 	features={[
 		{
-			title: "Streamlined Workflows",
-			description:
-				"Automate repetitive tasks and connect systems to improve productivity with our industry-leading 87% time savings."
+			title: "Your files, instantly available",
+			description: "Access cloud-hosted data as if it were local—no downloads, no sync lag, and no spinning up temp volumes just to get work done."
 		},
 		{
-			title: "Data Analysis",
-			description:
-				"Extract meaningful insights from your data with powerful analytical tools backed by proprietary AI algorithms that are 3x more accurate than competitors."
+			title: "Local file system that runs on S3",
+			description: "Regatta makes your S3 buckets behave like a POSIX-compliant local file system with full support for existing tools and pipelines."
 		},
 		{
-			title: "Secure Collaboration",
-			description:
-				"Work together seamlessly while maintaining strict data privacy standards with our zero-knowledge architecture and military-grade encryption."
+			title: "Zero changes to your stack",
+			description: "Drop-in replacement for EFS and EBS—plug into data-intensive applications without rearchitecting workloads or rewriting code."
+		},
+		{
+			title: "GPUs never wait on data",
+			description: "Stream massive datasets directly to your compute nodes so expensive resources don't sit idle during training, testing, or deploy."
+		},
+		{
+			title: "Runs anywhere S3 does",
+			description: "Compatible with all S3 and S3-like services, offering flexibility and portability with no vendor lock-in or region restrictions."
+		},
+		{
+			title: "Built for scale, built by experts",
+			description: "Designed by storage leaders from AWS and Netflix to handle multi-petabyte workloads with confidence, performance, and simplicity."
 		}
 	]}
 />
 
 <UseCases
-	generating
 	title="Use Cases"
 	subtitle="Real-world applications for your business needs"
 	useCases={[
 		{
-			title: "Streamlined Workflows",
-			description:
-				"Automate repetitive tasks and connect systems to improve productivity with our industry-leading 87% time savings.",
-			image:
-				"https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
+			title: "Faster AI training and iteration",
+			description: "Run ML training jobs and experiments without waiting for datasets to copy—access S3 storage at local speeds, so your GPUs stay busy, not idle.",
+			image: "/generated/image-a-group-of-researchers-collaborating-in-.webp",
 			link: {
-				href: "/use-cases/workflows",
+				href: "/use-cases/ai-training-performance",
 				label: "Learn more"
 			}
 		},
 		{
-			title: "Data Analysis",
-			description:
-				"Extract meaningful insights from your data with powerful analytical tools backed by proprietary AI algorithms that are 3x more accurate than competitors.",
-			image:
-				"https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2488&q=80",
+			title: "Instant data for CI/CD pipelines",
+			description: "Eliminate long build times and flaky tests caused by slow storage—give engineering teams direct, fast access to gigabytes of artifacts and dependencies.",
+			image: "/generated/image-engineers-in-a-contemporary-office-setti.webp",
 			link: {
-				href: "/use-cases/data-analysis",
-				label: "Explore analytics"
+				href: "/use-cases/faster-ci-cd",
+				label: "Learn more"
 			}
 		},
 		{
-			title: "Secure Collaboration",
-			description:
-				"Work together seamlessly while maintaining strict data privacy standards with our zero-knowledge architecture and military-grade encryption.",
-			image:
-				"https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
+			title: "Faster analytics and observability",
+			description: "Query and analyze huge volumes of cloud data in real time, keeping dashboards and platforms responsive for your users.",
+			image: "/generated/image-a-team-of-professionals-in-a-bustling-of.webp",
 			link: {
-				href: "/use-cases/collaboration",
-				label: "See security features"
+				href: "/use-cases/analytics-observability",
+				label: "Learn more"
 			}
 		}
 	]}
 />
 
-<AboutTeaser generating />
-<CallToAction generating />
+<AboutTeaser
+  quote="It kept bugging me—you shouldn’t need to copy all your data locally just to do fast compute in the cloud."
+  name="Hunter Leath"
+  title="Founder, Regatta Storage"
+  image="/generated/image-a-founder-and-an-engineer-collaborating-.webp"
+/>
+<CallToAction
+  title="Your GPUs shouldn’t wait on data"
+  subtitle="Run at full speed with local-like cloud storage — no manual downloads, syncing, or re-architecting."
+  description="Keep your workloads moving and your engineers happy. Regatta makes S3 feel like a local file system, so teams no longer wait on data transfers and GPUs never sit idle. Fast, reliable, and easy to deploy."
+  imageSrc="/generated/image-a-smiling-cloud-infrastructure-engineer-.webp"
+  callsToAction={[{ href: '/get-started', label: 'Try Regatta free', variant: 'primary' }]}
+/>
+

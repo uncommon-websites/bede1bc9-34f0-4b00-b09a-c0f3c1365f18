@@ -26,18 +26,17 @@
 </script>
 
 <SecondaryHero
-	title="Solving world hunger"
-	subtitle="one step at a time"
-	imageSrc="https://source.unsplash.com/random/?people"
+	title="S3, now a local file system"
+	subtitle="Skip the slowdowns—maximize GPU utilization and move fast with instant, POSIX-compatible cloud storage"
+	imageSrc="/mockups/airport-screen-1747844124326.png"
 />
 
 <!-- Story Section -->
 <Story
 	paragraphs={[
-		"We started in 2018 with a simple goal: make helpful tech that people actually need. While many chase profits, we chose to do things differently.",
-		"Beyond making good products, we care about doing the right thing, being kind to our planet, and making sure everyone can use what we build. That's our compass.",
-		"From day one, we've asked ourselves: 'Does this actually help people?' This question gets us through tough calls and shapes who we are. We're playing the long game here.",
-		"We think about how our work affects real people's lives. We build tech that brings people together, keeps your information safe, and treats everyone fairly. When we stick to these basics, good things happen."
+		"Hunter Leath spent nearly a decade building cloud storage systems at Amazon and running storage infrastructure at Netflix. During that time, he saw the same problem again and again: companies were paying millions for GPUs, only to leave them sitting idle—waiting for data to load. Whether it was training models, running CI jobs, or processing massive files, moving data from S3 into fast local storage was a daily pain. Sync scripts, slow filesystems, and clunky transfers held teams back—and made compute painfully inefficient.",
+		"Regatta Storage was born to fix this. Instead of forcing teams to wrestle with temporary storage or complex syncing setups, Regatta makes S3 feel like a local POSIX file system—with zero changes to application code. It turns any S3-compatible bucket into a local disk: read and write files instantly, process huge datasets in place, and keep cloud and local storage automatically in sync. With Regatta, teams can ship faster, scale smarter, and finally use expensive compute resources the way they were meant to be used.",
+		"Our mission is simple: bring world-class data infrastructure to anyone working with large datasets—no matter the size of their company. The best engineering teams in the world shouldn't be the only ones with fast, efficient, scalable storage pipelines. Regatta makes local-speed cloud storage accessible to every data and AI team building the future."
 	]}
 />
 
@@ -47,56 +46,28 @@
 <!-- StakeholderGrid Section -->
 <StakeholderGrid
 	stakeholderType="team"
-	title="Our team."
-	subtitle="Your partners in innovation."
+	title="Founder"
+	subtitle="Built by a storage engineer who knows the pain firsthand."
 	stakeholders={[
 		{
-			name: "Alex Morgan",
+			name: "Hunter Leath",
 			position: "Founder & CEO",
-			bio: "Started the company with a vision to transform the industry through innovative solutions.",
-			image:
-				"https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
-		},
-		{
-			name: "Jamie Chen",
-			position: "Chief Design Officer",
-			bio: "Award-winning designer with a passion for creating intuitive and beautiful experiences.",
-			image:
-				"https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=776&q=80"
-		},
-		{
-			name: "Taylor Wright",
-			position: "Head of Engineering",
-			bio: "Technology enthusiast focused on building scalable systems that make a difference.",
-			image:
-				"https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
+			bio: "Hunter spent 8 years building Amazon's Elastic File System, then led Netflix's cloud storage team. Now he’s building Regatta Storage to finally solve the data bottlenecks that slow down modern workloads.",
+			image: "/generated/image-a-professional-headshot-of-a-male-startu.webp"
 		}
 	]}
 />
 
-<StakeholderGrid
-	stakeholderType="investor"
-	title="Backed by the best."
-	subtitle="Point Nine, TSIC and others"
-	stakeholders={[
-		{
-			name: "Point Nine Capital",
-			image: "https://cdn.brandfetch.io/pointnine.com/w/400/h/400/logo?c=1id_elLz2Bd5Ej-dWo7"
-		},
-		{
-			name: "TSIC Ventures",
-			image: "https://cdn.brandfetch.io/tiny.vc/w/400/h/400/logo?c=1a2b3c4d5e"
-		},
-		{
-			name: "Sequoia Capital",
-			image: "https://cdn.brandfetch.io/sequoiacap.com/w/400/h/400/logo"
-		}
-	]}
-/>
+
+
 
 <!-- CTA Section -->
 <CallToAction
-	title="Ready to collaborate?"
+  title="Join us to build the backbone of cloud data."
+  subtitle="Be part of a high-talent team solving the hard problems in data movement, infrastructure, and scale."
+  description="Ready to help end slow data transfers and wasted GPUs? Reach out if you want to build foundational infrastructure, join the team, or invest in the future of cloud storage."
+/>
+"
 	subtitle="Let's create something amazing"
 	description="Join the companies already leveraging our expertise to transform their digital presence and achieve their business goals."
 />
