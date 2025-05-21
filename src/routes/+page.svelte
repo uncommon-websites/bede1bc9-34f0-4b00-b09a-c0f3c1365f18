@@ -7,16 +7,51 @@
 	import CallToAction from "$lib/components/layout/CallToAction.svelte";
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
-	import Hero from "$lib/components/layout/hero-sections/Hero.svelte";
+	import CustomerCardHero from "$lib/components/layout/hero-sections/CustomerCardHero.svelte";
 </script>
 
-<Hero
-	title="Elevate your business with thoughtful design"
-	subtitle="Solutions that enhance user experience, and improve visual communication."
-	imageSrc="/sample.png"
-	generating
+<CustomerCardHero
+  title="Your cloud storage, now local"
+  subtitle="Regatta turns S3 into a fast, local file system—so your data is always ready when compute is."
+  customers={[
+    {
+      name: "Dr. Emily Carter",
+      position: "AI Research Engineer, Salesforce",
+      imageSrc: "/generated/image-a-smiling-female-engineer-in-a-modern-wo.webp"
+    },
+    {
+      name: "Marcus Lin",
+      position: "CI/CD Developer, Depot",
+      imageSrc: "/generated/image-a-confident-male-developer-at-his-workst.webp"
+    },
+    {
+      name: "Alexis Reed",
+      position: "Platform Lead, Neon",
+      imageSrc: "/generated/image-a-professional-female-lead-in-a-bustling.webp"
+    },
+    {
+      name: "Ryan Patel",
+      position: "Observability Specialist, Axiom",
+      imageSrc: "/generated/image-a-male-specialist-in-an-open-workspace-p.webp"
+    },
+    {
+      name: "Priya Mukherjee",
+      position: "Satellite Imagery Scientist, ValueSpace",
+      imageSrc: "/generated/image-a-female-data-scientist-in-a-collaborati.webp"
+    }
+  ]}
+  centered={false}
 />
-<LogoScroller label="" generating />
+
+<LogoScroller
+	label="Trusted by industry leaders"
+	logoUrls={[
+		'https://logo.clearbit.com/nvidia.com',
+		'https://logo.clearbit.com/salesforce.com',
+		'https://logo.clearbit.com/zillow.com',
+		'https://logo.clearbit.com/depot.dev'
+	]}
+/>
 
 <Summary
 	generating
